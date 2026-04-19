@@ -1,0 +1,22 @@
+{
+  "overview": "A minimal NFT minting dApp on the Internet Computer. Connect your Plug wallet, upload an image, give it a name, and mint your ICRC-7 NFT directly on-chain. View all your minted NFTs in a personal gallery.",
+  "features": [
+    "Plug wallet connection with Internet Identity fallback",
+    "Upload PNG/JPG images (max 5MB) with name and optional description",
+    "Mint ICRC-7 NFTs directly to your principal on ICP",
+    "Images stored as blobs in stable canister memory — no data loss on upgrade",
+    "Personal NFT gallery showing only your minted NFTs",
+    "Success screen with token ID and canister dashboard link"
+  ],
+  "category": "web3-nft",
+  "tags": [
+    "nft",
+    "icp",
+    "icrc-7",
+    "motoko",
+    "plug-wallet",
+    "web3",
+    "internet-computer"
+  ],
+  "last_updated": "2026-04-19T08:41:16.048Z"
+}

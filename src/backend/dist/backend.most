@@ -1,0 +1,33 @@
+// Version: 1.0.0
+type Data__791452850<K, V> =
+  {var count : Nat__490723111; kvs : [var ?(K, V)]};
+type Internal__8484328<K, V> =
+  {children : [var ?Node__46230540<K, V>]; data : Data__791452850<K, V>};
+type Leaf__809889148<K, V> = {data : Data__791452850<K, V>};
+type Map__158565046<K, V> = Map__297112838<K, V>;
+type Map__297112838<K, V> =
+  {var root : Node__46230540<K, V>; var size : Nat__490723111};
+type Map__605269027<K, V> = Map__158565046<K, V>;
+type NFT__757044672 =
+  {
+    description : Text;
+    id : TokenId__283674492;
+    image : Blob;
+    mintedAt : Timestamp__301639476;
+    name : Text;
+    owner : Principal
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type Node__46230540<K, V> =
+  {#internal : Internal__8484328<K, V>; #leaf : Leaf__809889148<K, V>};
+type Timestamp__301639476 = Int;
+type TokenId__281627578 = Nat;
+type TokenId__283674492 = TokenId__281627578;
+actor {
+  stable state :
+    {
+      var nextTokenId : Nat;
+      tokens : Map__605269027<TokenId__283674492, NFT__757044672>
+    }
+};
